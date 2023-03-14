@@ -37,7 +37,88 @@
 			
 			<main>
 				<h1>Order Event Tickets</h1>
-				<!-- The form starts here... -->
+				<form name="order_form" id="order_form" action="place_order.html" method="post">
+					<fieldset>
+						<legend>Member Information</legend>
+						E-Mail:<input type="text" name="email" id="email"><br>
+						First Name:<input type="text" name="fname" id="fname"><br>
+						Last Name:<input type="text" name="lname" id="lname"><br>
+						Address:<input type="text" name="address" id="address"><br>
+						City:<input type="text" name="city" id="city"><br>
+						Province:<input type="text" name="province" id="province"><br>
+						Postal Code:<input type="text" name="postal" id="postal"><br>
+						Phone Number:<input type="text" name="phone" id="phone"><br>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Ordering Information</legend>
+						Event: <select name="event">
+							<option value="cookie">Cookie Decoration Contest</option>
+							<option value="tree">Tree Decoration Contest</option>
+							<option value="gift-ride">Gift of Life Ride-Along</option>
+							<option value="breakfast">Breakfast with Santa</option>
+						</select>
+						<br>
+						Order Type: <select name="order-type">
+							<option value="member">Member Package</option>
+							<option value="donor">Donor Package</option>
+							<option value="single">Single Tickets</option>
+							
+						</select>
+						<br>
+						Number of Tickets: <input type="number" name="ticket-count" id="ticket-count">
+						<br>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Payment Method</legend>
+						<input type="radio" name="method" id="bill" value="Bill Me"> Bill Me
+						<input type="radio" name="method" id="card" value="Credit Card"> Credit Card
+					</fieldset>
+					<fieldset>
+						<legend>Credit Card Information</legend>
+						
+						Card Type: <select name="card-type">
+							<option value="visa">Visa</option>
+							<option value="mastercard">Mastercard</option>
+							<option value="discover">Discover</option>
+
+						</select>
+						<br>
+						Card Number:<input type="text" name="c-num" id="c-num">
+						<br>
+						Expiration Date:<select name="month">
+							<option value="jan">January</option>
+							<option value="feb">February</option>
+							<option value="mar">March</option>
+							<option value="april">April</option>
+							<option value="may">May</option>
+							<option value="june">June</option>
+							<option value="july">July</option>
+							<option value="aug">August</option>
+							<option value="sept">September</option>
+							<option value="oct">October</option>
+							<option value="nov">November</option>
+							<option value="dec">December</option>
+
+						</select>
+						<select name="year">
+							<option value="21">2021</option>
+							<option value="22">2022</option>
+							<option value="23">2023</option>
+							<option value="24">2024</option>
+							<option value="25">2025</option>
+							<option value="26">2026</option>
+							<option value="27">2027</option>
+						</select>
+						
+					</fieldset>
+					<fieldset>
+						<legend>Submit Your Order</legend>
+						<input type="submit">
+						<input type="reset">
+					</fieldset>
+				</form>
 				
 			</main>
 			
